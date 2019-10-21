@@ -1,0 +1,1 @@
+<script src="script/search_result_pagination.js" type="text/javascript"></script>

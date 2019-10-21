@@ -1,0 +1,1 @@
+<script src="scripts/building_table_inactive_list.js" type="text/javascript"></script>

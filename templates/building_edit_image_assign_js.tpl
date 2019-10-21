@@ -1,0 +1,1 @@
+<script src="script/building_edit_image_assign.js" type="text/javascript"></script>

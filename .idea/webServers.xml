@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9695c0e0-5be3-4cc8-a39a-d5c64bec8dd8" name="AIBO" url="http://localhost/1/aiboc">
+        <fileTransfer port="0" mountedRoot="E:\wamp\www\1\aiboc" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

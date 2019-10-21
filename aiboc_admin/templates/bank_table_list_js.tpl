@@ -1,0 +1,1 @@
+<script src="scripts/bank_table_list.js" type="text/javascript"></script>

@@ -1,0 +1,1 @@
+<script src="vendars/scripts/datatable_building_list.js" type="text/javascript"></script>

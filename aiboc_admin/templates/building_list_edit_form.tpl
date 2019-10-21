@@ -1,0 +1,139 @@
+<ol class="breadcrumb" style="background-color:#e0dfe3 ; color: dodgerblue; font-family: Elephant">
+    <h3>Building Registration Edit</h3>
+</ol>
+<div class="well">
+    <div id="rescout"></div>
+    <form method="post" action="building_list_update.php" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Location:</label>
+                    <input type="text" name="rlocation" id="rlocation" class="form-control" value="{$getlocation}" placeholder="Building Location">
+                </div>
+                <div class="form-group">
+                    <label>Place:</label>
+                    <input type="text" name="rplace" id="rplace" class="form-control" value="{$getplace}" placeholder="Building Place">
+                </div>
+                <div class="form-group">
+                    <label>State:</label>
+                    <input type="text" name="rstate" id="rstate" class="form-control" value="{$getstate}" placeholder="State">
+                </div>
+                <div class="form-group">
+                    <label>Pin:</label>
+                    <input type="text" name="rpin" id="rpin" class="form-control" value="{$getpin}" placeholder="Pin Code">
+                </div>
+                <div class="form-group">
+                    <label>Building type:</label>
+                    <select name="rbuildingtype" id="rbuildingtype" class="selectpicker form-control" title="Choose the Options">
+                        <option value="house">House</option>
+                        <option value="flat">Flat</option>
+                        <option value="portion-house">Portion-house</option>
+                        <option value="villas">Villas</option>
+                        <option value="paying-guest-mens">Paying Guest Mens</option>
+                        <option value="paying-guest-womens">Paying Guest Womens</option>
+                        <option value="mens-hostel">Mens Hostel</option>
+                        <option value="womens-hostel">Womens Hostel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Rooms Options:</label>
+                    <select name="rroomsoptions[]"  class="selectpicker form-control" id="rroomsoptions" multiple title="Choose the Rooms Options">
+                        <optgroup label="Rooms" data-max-options="1">
+                            <option value="1-bhk">1 BHK</option>
+                            <option value="2-bhk">2 BHK</option>
+                            <option value="3-bhk">3 BHK</option>
+                            <option value="4-bhk">4 BHK</option>
+                            <option value="5-bhk">5 BHK</option>
+                        </optgroup>
+                        <optgroup label="No Of Toilets" data-max-options="1">
+                            <option value="1">1 Toilet</option>
+                            <option value="2">2 Toilets</option>
+                            <option value="3">3 Toilets</option>
+                            <option value="4">4 Toilets</option>
+                            <option value="5">5 Toilets</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Carpet Area in (sqf):</label>
+                    <input type="text" name="rcarpetarea" id="rcarpetarea" class="form-control" value="{$getcarpetarea}" placeholder="Carpet Area sqf">
+                </div>
+                <div class="form-group">
+                    <label>Excepted Rent:</label>
+                    <select name="rexceptedrent" class="selectpicker form-control" title="Excepted Rent">
+                        <option value="2000">2000</option>
+                        <option value="3000">3000</option>
+                        <option value="4000">4000</option>
+                        <option value="5000">5000</option>
+                        <option value="6000">6000</option>
+                        <option value="2000">7000</option>
+                        <option value="3000">80000</option>
+                        <option value="4000">9000</option>
+                        <option value="5000">10000</option>
+                        <option value="6000">11000</option>
+                        <option value="6000">12000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Maintance Cost:</label>
+                    <input type="text" name="rmaincost" id="rmaincost" class="form-control" value="{$getmaincost}" placeholder="Maintance Cost">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Water Facility:</label>
+                    <select name="rwaterfacility[]" id="rwaterfacility" class="selectpicker form-control" multiple title="Water Facility">
+                        <option value="borewell">Borewell</option>
+                        <option value="well">Well</option>
+                        <option value="water-connection">Water-Connection</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Power Backup:</label>
+                    <select name="rpowerbackup[]" id="rpowerbackup" multiple class="selectpicker form-control" title="Power Backup Options">
+                        <option value="ups">UPS</option>
+                        <option value="3 phase">3 Face</option>
+                        <option value="gen-set">Gen-Set</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Lift Facility:</label>
+                    <select name="rlift" class="selectpicker form-control" title="Lift Facility Options">
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Parking Area:</label>
+                    <select name="rparking" class="selectpicker form-control" title="Parking Area Options">
+                        <option value="bike-only" data-subtext="Bike only Available">Bike Only</option>
+                        <option value="car-only" data-subtext="Car only Available">Car Only</option>
+                        <option value="both" data-subtext="Bike & Car Available">Both</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Address:</label>
+                    <textarea rows="3" name="raddress" id="raddress" class="form-control">{$getaddress}</textarea>
+                </div>
+                <div class="form-group">
+                    <label>Other Facilities:</label>
+                    <textarea rows="3" name="rotherfaci" id="rotherfaci" class="form-control">{$getotherfeci}</textarea>
+                </div>
+                <div class="form-group">
+                    <label>Any Conditions:</label>
+                    <textarea rows="2" name="rconditions" id="rconditions" class="form-control">{$getconditions}</textarea>
+                </div>
+                <div class="form-group">
+                    <label>Building Images:</label>
+                    <input id="ourimges" name="ourimges[]" type="file" multiple="true">
+                </div>
+                <div style="padding: 0px;" class="col-lg-3 col-lg-offset-9">
+                    <div class="form-group">
+                        <button class="btn btn-success form-control">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>

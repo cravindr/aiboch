@@ -1,0 +1,1 @@
+<script src="scripts/inactive_tenant_table_list.js" type="text/javascript"></script>

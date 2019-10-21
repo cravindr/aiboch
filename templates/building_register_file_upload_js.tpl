@@ -1,0 +1,1 @@
+<script src="script/building_register_file_upload.js"></script>

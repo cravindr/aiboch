@@ -1,0 +1,1 @@
+<script src="scripts/search_building_table_list.js" type="text/javascript"></script>

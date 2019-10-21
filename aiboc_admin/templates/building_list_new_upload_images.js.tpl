@@ -1,0 +1,1 @@
+<script src="scripts/image_upload.js" type="text/javascript"></script>

@@ -1,0 +1,1 @@
+<script src="script/owner_building_list.js" type="text/javascript"></script>

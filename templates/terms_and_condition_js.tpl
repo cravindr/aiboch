@@ -1,0 +1,1 @@
+<script src="script/terms_conditions.js" type="text/javascript"></script>

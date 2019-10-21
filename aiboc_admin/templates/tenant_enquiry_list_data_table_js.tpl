@@ -1,0 +1,1 @@
+<script src="scripts/tenant_enquiry_list.js" type="text/javascript"></script>
